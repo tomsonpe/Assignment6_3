@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.assignmenttp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="23" />
+
+    <application
+        android:name="com.assignmenttp.config.util.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <service
+            android:name="com.assignmenttp.service.customer.birthdayParty.implem.BirthdayPartyServiceImplem"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.assignmenttp.service.customer.birthdayParty.implem.UpdateBirthdayPartyServiceImplem"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.assignmenttp.service.customer.funeral.implem.UpdateFuneralServiceImplem"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.assignmenttp.service.customer.graduation.implem.UpdateGraduationServiceImplem"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.assignmenttp.service.customer.others.implem.UpdateOthersServiceImplem"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.assignmenttp.service.customer.rel.implem.UpdateReligionServiceImplem"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.assignmenttp.service.customer.funeral.implem.FuneralServiceImplem"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.assignmenttp.service.customer.graduation.implem.AddGraduationServiceImplem"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.assignmenttp.service.customer.others.implem.AddOthersServiceimplem"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.assignmenttp.service.customer.rel.implem.AddReligionServiceimplem"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.assignmenttp.service.customer.employees.photo.implem.AddPhotoTakerService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name="com.assignmenttp.MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+    </application>
+
+</manifest>
